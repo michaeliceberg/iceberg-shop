@@ -4,8 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Rostelecom Application',
     short_name: 'Rostelecom App',
-    description:
-      'Rostelecom магазин одежды, аксесуаров, концелярии и сувениров',
+    description: 'Айсберг асфальто-бетонный завод',
     start_url: '/',
     background_color: '#fff',
     theme_color: '#fff',

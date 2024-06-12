@@ -19,7 +19,7 @@ import './globalStyles/map.css'
 
 export const metadata: Metadata = {
   title: 'Rostelecom',
-  description: 'Rostelecom магазин одежды, аксесуаров, концелярии и сувениров',
+  description: 'Айсберг асфальто-бетонный завод',
 }
 
 export const viewport: Viewport = {
