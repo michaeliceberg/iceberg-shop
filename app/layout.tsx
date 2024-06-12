@@ -18,7 +18,7 @@ import './globalStyles/breadcrumbs.css'
 import './globalStyles/map.css'
 
 export const metadata: Metadata = {
-  title: 'Rostelecom',
+  title: 'Iceberg',
   description: 'Айсберг асфальто-бетонный завод',
 }
 

@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Rostelecom Application',
-    short_name: 'Rostelecom App',
+    name: 'Iceberg Application',
+    short_name: 'Iceberg App',
     description: 'Айсберг асфальто-бетонный завод',
     start_url: '/',
     background_color: '#fff',
