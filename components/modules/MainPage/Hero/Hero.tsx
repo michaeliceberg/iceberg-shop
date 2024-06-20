@@ -42,14 +42,12 @@ const Hero = () => {
       <h1 className='visually-hidden'>
         {translations[lang].main_page.hero_hidden_title}
       </h1>
-      
       <div className={`container ${styles.hero__container}`}>
         <span className={stylesForAd.ad}>
           {translations[lang].common.ad}
           <br />
           {translations[lang].common.ad2}
         </span>
-        
         <Swiper
           className={styles.hero__slider}
           effect='coverflow'

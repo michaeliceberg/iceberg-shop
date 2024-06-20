@@ -20,13 +20,11 @@ const ProductSubtitle = ({
         )}
       </span>
       <br />
-      
       <span>
         {translations[lang].main_page.hero_description.slice(
           descriptionSlicePosition
         )}
       </span>
-      
     </div>
   )
 }
