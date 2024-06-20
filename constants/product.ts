@@ -30,7 +30,8 @@ export const productTypes = [
   'bstgranit',
 ]
 
-export const productCategories = ['concrete', 'asphalt', 'office', 'souvenirs']
+export const productCategories = ['concrete', 'asphalt']
+// export const productCategories = ['concrete', 'asphalt', 'office', 'souvenirs']
 export const allowedColors = ['purpure', 'yellow', 'orange', 'black', 'white']
 export const allowedSizes = ['s', 'l', 'm', 'xl', 'xxl']
 export const allowedCollectionsCategories = ['concrete', 'asphalt']

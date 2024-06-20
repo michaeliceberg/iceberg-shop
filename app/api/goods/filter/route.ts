@@ -73,6 +73,13 @@ export async function GET(req: Request) {
         return goods
       }
 
+      // const [concrete, asphalt, office, souvenirs] = await Promise.allSettled([
+      //   getFilteredCollection('concrete'),
+      //   getFilteredCollection('asphalt'),
+      //   getFilteredCollection('office'),
+      //   getFilteredCollection('souvenirs'),
+      // ])
+
       const [concrete, asphalt, office, souvenirs] = await Promise.allSettled([
         getFilteredCollection('concrete'),
         getFilteredCollection('asphalt'),

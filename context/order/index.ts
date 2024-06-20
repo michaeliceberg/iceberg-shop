@@ -37,7 +37,7 @@ export const getRostelecomOfficesByCityFx = order.createEffect(
       const baseUrl = `https://api.geoapify.com/v1/geocode/search?format=json&apiKey=${apiKey}`
       const { data } = await api.get(`${baseUrl}&text=${city}&lang=${lang}`)
       const rostelecomData = await api.get(
-        `${baseUrl}&text=ростелеком&filter=place:${data.results[0].place_id}`
+        `${baseUrl}&text=мирастрой&filter=place:${data.results[0].place_id}`
       )
 
       return rostelecomData.data.results

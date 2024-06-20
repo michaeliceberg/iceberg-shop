@@ -5,7 +5,8 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from 'react'
 import Menu from './Menu'
-import { openMenu, openSearchModal } from '@/context/modals'
+// import { openMenu, openSearchModal } from '@/context/modals'
+import { openMenu } from '@/context/modals'
 import {
   addOverflowHiddenToBody,
   handleOpenAuthPopup,
@@ -50,10 +51,10 @@ const Header = () => {
     openMenu()
   }
 
-  const handleOpenSearchModal = () => {
-    openSearchModal()
-    addOverflowHiddenToBody()
-  }
+  // const handleOpenSearchModal = () => {
+  //   openSearchModal()
+  //   addOverflowHiddenToBody()
+  // }
 
   useEffect(() => {
     const auth = JSON.parse(localStorage.getItem('auth') as string)
@@ -157,10 +158,10 @@ const Header = () => {
         </div>
         <ul className='header__links list-reset'>
           <li className='header__links__item'>
-            <button
+            {/* <button
               className='btn-reset header__links__item__btn header__links__item__btn--search'
               onClick={handleOpenSearchModal}
-            />
+            /> */}
           </li>
           <li className='header__links__item'>
             <Link

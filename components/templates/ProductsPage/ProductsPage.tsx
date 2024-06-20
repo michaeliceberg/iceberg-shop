@@ -41,21 +41,21 @@ const ProductsPage = ({ searchParams, pageName }: IProductsPage) => {
               title: translations[lang].main_menu.concrete,
               href: '/catalog/concrete',
             },
-            {
-              id: 3,
-              title: translations[lang].main_menu.asphalt,
-              href: '/catalog/asphalt',
-            },
-            {
-              id: 4,
-              title: translations[lang].main_menu.souvenirs,
-              href: '/catalog/souvenirs',
-            },
-            {
-              id: 5,
-              title: translations[lang].main_menu.office,
-              href: '/catalog/office',
-            },
+            // {
+            //   id: 3,
+            //   title: translations[lang].main_menu.asphalt,
+            //   href: '/catalog/asphalt',
+            // },
+            // {
+            //   id: 4,
+            //   title: translations[lang].main_menu.souvenirs,
+            //   href: '/catalog/souvenirs',
+            // },
+            // {
+            //   id: 5,
+            //   title: translations[lang].main_menu.office,
+            //   href: '/catalog/office',
+            // },
           ],
         })
         break

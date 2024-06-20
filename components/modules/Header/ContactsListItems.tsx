@@ -8,10 +8,10 @@ const ContactsListItems = () => {
     <>
       <li className='nav-menu__accordion__item'>
         <a
-          href='tel:+74995558293'
+          href='tel:+74955043355'
           className='nav-menu__accordion__item__link nav-menu__accordion__item__title'
         >
-          +7 (499) 555 82 93
+          +7 (495) 504-33-55
         </a>
       </li>
       <li className='nav-menu__accordion__item'>
@@ -24,7 +24,7 @@ const ContactsListItems = () => {
       </li>
       <li className='nav-menu__accordion__item'>
         <Link
-          href='https://t.me/dvejer'
+          href='https://t.me/michaeldeve'
           className='nav-menu__accordion__item__link'
         >
           {translations[lang].main_menu.tg}

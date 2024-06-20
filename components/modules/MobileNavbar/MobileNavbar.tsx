@@ -27,6 +27,7 @@ const MobileNavbar = () => {
   const handleOpenCatalogMenu = () => {
     addOverflowHiddenToBody('0')
     openCatalogMenu()
+    // closeCatalogMenu()
     closeMenu()
   }
 

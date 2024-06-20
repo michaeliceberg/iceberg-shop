@@ -20,19 +20,16 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      // title: `${translations[lang].main_page.tShirt} «Line» ${translations[lang].main_page.black}`,
       title: `Керамзитобетон`,
       image: img1,
     },
     {
       id: 2,
-      // title: `${translations[lang].main_page.tShirt} «Line» ${translations[lang].main_page.orange}`,
       title: `Бетон на гравии`,
       image: img2,
     },
     {
       id: 3,
-      // title: `${translations[lang].main_page.tShirt} «Line» ${translations[lang].main_page.violet}`,
       title: `Бетон растворный`,
       image: img3,
     },

@@ -22,8 +22,8 @@ export async function POST(req: Request) {
         'Idempotence-Key': Date.now(),
       },
       auth: {
-        username: '284434',
-        password: 'test_qDOAK1qBsglEy7Pbf2ZkSq7-uWERPH-LNAwPyPNS8hc',
+        username: '405181',
+        password: 'test_giqWdbwEIIPi8z_Wi_XtqDAJ5_pihZ1vEqFLecd2rrk',
       },
       data: {
         amount: {
@@ -33,6 +33,7 @@ export async function POST(req: Request) {
         confirmation: {
           type: 'redirect',
           return_url: 'https://iceberg-shop.vercel.app/payment-success',
+          // return_url: 'http://localhost:3000/payment-success',
         },
         capture: true,
         description: reqBody.description,

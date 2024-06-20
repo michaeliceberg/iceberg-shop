@@ -46,16 +46,16 @@ const CatalogMenu = () => {
       ],
       handler: () => setActiveListId(1),
     },
-    {
-      name: translations[lang].main_menu.asphalt,
-      id: 2,
-      items: [
-        translations[lang].comparison.asph_b,
-        translations[lang].comparison.asph_c,
-        translations[lang].comparison.asph_a,
-      ],
-      handler: () => setActiveListId(2),
-    },
+    //   {
+    //   name: translations[lang].main_menu.asphalt,
+    //   id: 2,
+    //   items: [
+    //     translations[lang].comparison.asph_b,
+    //     translations[lang].comparison.asph_c,
+    //     translations[lang].comparison.asph_a,
+    //   ],
+    //   handler: () => setActiveListId(2),
+    // },
   ]
   return (
     <div className='catalog-menu' style={{ zIndex: popupZIndex }}>
@@ -136,44 +136,46 @@ const CatalogMenu = () => {
                           )}
                         </>
                       )}
-                      {!isMedia450 && (
-                        <AnimatePresence>
-                          {isCurrentList(isActiveList(1), 1) && (
-                            <CatalogMenuList items={items} />
-                          )}
-                          {isCurrentList(isActiveList(2), 2) && (
-                            <CatalogMenuList items={items} />
-                          )}
-                          {isCurrentList(isActiveList(3), 3) && (
-                            <CatalogMenuList items={items} />
-                          )}
-                          {isCurrentList(isActiveList(4), 4) && (
-                            <CatalogMenuList items={items} />
-                          )}
-                        </AnimatePresence>
-                      )}
-                      {isMedia450 && (
-                        <Accordion
-                          title={name}
-                          titleClass='btn-reset nav-menu__accordion__item__title'
-                        >
-                          <ul className='list-reset catalog__accordion__list'>
-                            {items.map((title, i) => (
-                              <li
-                                key={i}
-                                className='catalog__accordion__list__item'
-                              >
-                                <Link
-                                  href='/catalog'
-                                  className='nav-menu__accordion__item__list__item__link'
+                      <motion.li onClick={handleCloseMenu}>
+                        {!isMedia450 && (
+                          <AnimatePresence>
+                            {isCurrentList(isActiveList(1), 1) && (
+                              <CatalogMenuList items={items} />
+                            )}
+                            {isCurrentList(isActiveList(2), 2) && (
+                              <CatalogMenuList items={items} />
+                            )}
+                            {isCurrentList(isActiveList(3), 3) && (
+                              <CatalogMenuList items={items} />
+                            )}
+                            {isCurrentList(isActiveList(4), 4) && (
+                              <CatalogMenuList items={items} />
+                            )}
+                          </AnimatePresence>
+                        )}
+                        {isMedia450 && (
+                          <Accordion
+                            title={name}
+                            titleClass='btn-reset nav-menu__accordion__item__title'
+                          >
+                            <ul className='list-reset catalog__accordion__list'>
+                              {items.map((title, i) => (
+                                <li
+                                  key={i}
+                                  className='catalog__accordion__list__item'
                                 >
-                                  {title}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </Accordion>
-                      )}
+                                  <Link
+                                    href='/catalog'
+                                    className='nav-menu__accordion__item__list__item__link'
+                                  >
+                                    {title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </Accordion>
+                        )}
+                      </motion.li>
                     </motion.li>
                   )
                 })}

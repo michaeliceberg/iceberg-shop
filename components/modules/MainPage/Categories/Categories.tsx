@@ -44,12 +44,12 @@ const Categories = () => {
           {!isMedia490 && (
             <>
               <Link
-                href='/catalog/concrete'
+                href='/catalog/concrete?offset=0&type=bstgraviy'
                 className={`${styles.categories__right} ${styles.categories__img} ${imgSpinnerClass}`}
               >
                 <Image
                   src={img1}
-                  alt='concrete'
+                  alt='Bstgraviy'
                   className='transition-opacity opacity-0 duration'
                   onLoad={handleLoadingImageComplete}
                 />
@@ -58,24 +58,24 @@ const Categories = () => {
               <div className={styles.categories__left}>
                 <div className={styles.categories__left__top}>
                   <Link
-                    href='/catalog/asphalt'
+                    href='/catalog/concrete?offset=0&type=keramzitobeton'
                     className={`${styles.categories__left__top__right} ${styles.categories__img} ${imgSpinnerClass}`}
                   >
                     <Image
                       src={img2}
-                      alt='asphalt'
+                      alt='Keramzitobeton'
                       className='transition-opacity opacity-0 duration'
                       onLoad={handleLoadingImageComplete}
                     />
                     <span>{translations[lang].main_page.category_asphalt}</span>
                   </Link>
                   <Link
-                    href='/catalog/souvenirs'
+                    href='/catalog/concrete?offset=0&type=rastvor'
                     className={`${styles.categories__left__top__left} ${styles.categories__img} ${imgSpinnerClass}`}
                   >
                     <Image
                       src={img3}
-                      alt='Souvenirs'
+                      alt='Rastvor'
                       className='transition-opacity opacity-0 duration'
                       onLoad={handleLoadingImageComplete}
                     />
@@ -83,12 +83,12 @@ const Categories = () => {
                   </Link>
                 </div>
                 <Link
-                  href='/catalog/office'
+                  href='/catalog/concrete?offset=0&type=dorozhnotransportniy'
                   className={`${styles.categories__left__bottom} ${styles.categories__img} ${imgSpinnerClass}`}
                 >
                   <Image
                     src={img4}
-                    alt='Office'
+                    alt='Dorozhnotransportniy'
                     className='transition-opacity opacity-0 duration'
                     onLoad={handleLoadingImageComplete}
                   />
