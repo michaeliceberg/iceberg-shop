@@ -136,46 +136,48 @@ const CatalogMenu = () => {
                           )}
                         </>
                       )}
-                      <motion.li onClick={handleCloseMenu}>
-                        {!isMedia450 && (
-                          <AnimatePresence>
-                            {isCurrentList(isActiveList(1), 1) && (
-                              <CatalogMenuList items={items} />
-                            )}
-                            {isCurrentList(isActiveList(2), 2) && (
-                              <CatalogMenuList items={items} />
-                            )}
-                            {isCurrentList(isActiveList(3), 3) && (
-                              <CatalogMenuList items={items} />
-                            )}
-                            {isCurrentList(isActiveList(4), 4) && (
-                              <CatalogMenuList items={items} />
-                            )}
-                          </AnimatePresence>
-                        )}
-                        {isMedia450 && (
-                          <Accordion
-                            title={name}
-                            titleClass='btn-reset nav-menu__accordion__item__title'
-                          >
-                            <ul className='list-reset catalog__accordion__list'>
-                              {items.map((title, i) => (
-                                <li
-                                  key={i}
-                                  className='catalog__accordion__list__item'
+
+                      {!isMedia450 && (
+                        <AnimatePresence>
+                          {isCurrentList(isActiveList(1), 1) && (
+                            <CatalogMenuList items={items} />
+                          )}
+                          {isCurrentList(isActiveList(2), 2) && (
+                            <CatalogMenuList items={items} />
+                          )}
+                          {isCurrentList(isActiveList(3), 3) && (
+                            <CatalogMenuList items={items} />
+                          )}
+                          {isCurrentList(isActiveList(4), 4) && (
+                            <CatalogMenuList items={items} />
+                          )}
+                        </AnimatePresence>
+                      )}
+                      {/* <motion.li onClick={handleCloseMenu}> */}
+                      {isMedia450 && (
+                        <Accordion
+                          title={name}
+                          titleClass='btn-reset nav-menu__accordion__item__title'
+                        >
+                          <ul className='list-reset catalog__accordion__list'>
+                            {items.map((title, i) => (
+                              <motion.li
+                                onClick={handleCloseMenu}
+                                key={i}
+                                className='catalog__accordion__list__item'
+                              >
+                                <Link
+                                  href='/catalog'
+                                  className='nav-menu__accordion__item__list__item__link'
                                 >
-                                  <Link
-                                    href='/catalog'
-                                    className='nav-menu__accordion__item__list__item__link'
-                                  >
-                                    {title}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </Accordion>
-                        )}
-                      </motion.li>
+                                  {title}
+                                </Link>
+                              </motion.li>
+                            ))}
+                          </ul>
+                        </Accordion>
+                      )}
+                      {/* </motion.li> */}
                     </motion.li>
                   )
                 })}
