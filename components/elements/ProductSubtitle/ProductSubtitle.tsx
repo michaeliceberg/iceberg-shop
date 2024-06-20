@@ -11,6 +11,8 @@ const ProductSubtitle = ({
   return (
     <div className={subtitleClassName}>
       <div className={subtitleRectClassName} />
+      <br />
+      <br />
       <span>
         {translations[lang].main_page.hero_description.slice(
           0,
@@ -18,11 +20,13 @@ const ProductSubtitle = ({
         )}
       </span>
       <br />
+      
       <span>
         {translations[lang].main_page.hero_description.slice(
           descriptionSlicePosition
         )}
       </span>
+      
     </div>
   )
 }

@@ -8,10 +8,10 @@ const ContactsListItems = () => {
     <>
       <li className='nav-menu__accordion__item'>
         <a
-          href='tel:+74955043355'
+          href='tel:+79253010106'
           className='nav-menu__accordion__item__link nav-menu__accordion__item__title'
         >
-          +7 (495) 504-33-55
+          +7 (925) 301-01-06
         </a>
       </li>
       <li className='nav-menu__accordion__item'>

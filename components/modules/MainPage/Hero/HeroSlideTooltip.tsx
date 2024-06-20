@@ -13,7 +13,7 @@ const HeroSlideTooltip = ({ title, image }: IHeroSlideTooltip) => (
     <p className={styles.hero__slider__slide__popup__inner}>
       <b className={styles.hero__slider__slide__popup__title}>{title}</b>
       <span className={styles.hero__slider__slide__popup__price}>
-        {title === 'Бетон на гравии' ? '6000' : '6600'} ₽
+        {title === 'Бетон на гравии' ? '6050' : '6650'} ₽
       </span>
     </p>
   </div>
