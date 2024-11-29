@@ -10,6 +10,7 @@ const NotFound = () => {
     <main>
       <section className={styles.not_found}>
         <div className='container'>
+          <h1>hello</h1>
           <EmptyPageContent
             subtitle={translations[lang].common.not_found_subtitle}
             description={translations[lang].common.not_found_description}
